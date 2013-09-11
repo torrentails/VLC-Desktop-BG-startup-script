@@ -13,7 +13,7 @@ Use:
 -----------------------------
 1. Simply save the script anywhere you like. 
 2. Right-click it and select edit. 
-3. Change file to the full path to the file you would like to run at startup. 
+3. Change the file at the end of the last line to the full path to the file you would like to run at startup. 
     
     a. Add `File:///` at the front 
     
@@ -23,9 +23,11 @@ Use:
     
     EG. `"File:///C:/Users/yourname/videos/Dork_PMV.mp4"` 
 4. Install [VLC](http://www.videolan.org/vlc/download-windows.html) if you haven't done so already. 
-5. (Optional) Change vlcpath to the path of your VLC installation. 
+5. (Optional) Change the `CD` path to the path of your VLC installation. 
     
     This shouldn't be nessesary if you installed to the Default directory and are running a 64 bit opperating system. 
+    
+    If you aren't using a 64 bit system then you should be able to simply remove the *(x86)* part. 
 6. Save the file and then run the script to confirm that it plays as your desktop background. 
 7. Download and install [WinPatrol](http://www.winpatrol.com/) 
 8. Once installed, open it as an administrator and goto the startup programs tab. 
@@ -45,6 +47,7 @@ You should really only need to change the delay time. Try to stager the startup 
 FAQ:
 -----------------------------
 + **Q:** What do all those parameters after the start command do? 
+    
     **A:** `/min`
     Starts VLC minimized so you don't have to look at it, blocking your nice desktop.
     
@@ -88,6 +91,7 @@ FAQ:
     Exits VLC once it's finished playing your video, so that it doesn't hang arround on the taskbar.
     
 + **Q:** What is WinPatrol? 
+    
     **A:** WinPatrol is a windows tool to help protect your computer from malware and help it function properly. 
     
     To be honest, I only found WinPatrol while putting together this script because I wanted a way to control the start order of startup applications. I've done a bit of google searching on it and it seems legit and it's been arround for a long time and is updated fairly often.
@@ -95,11 +99,13 @@ FAQ:
     I'm actually quite fond of it now, my computer starts up so much more efficiently! :)
 
 + **Q:** What is VLC? 
+    
     **A:** ***OMGWTFBBQ!?*** **0_o** I'm suprised you've not heared of it! 
     
     VLC stands for Video LAN Client, if I'm not mistaken, and it is one of, if not, the most popular media player available. It's open source and has a huge, active user base and is easily extensible.
 
 + **Q:** This is too hard to understand! Is there a video tutorial I can watch? 
+    
     **A:** Not yet, but I'm working on it! 
     
     Check my [youtube chanel](http://www.youtube.com/user/torrentails) to see if it's up.
