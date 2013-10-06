@@ -35,16 +35,20 @@ Optional, advanced but recomended:
 -----------------------------
 
 In WinPatrol -> Startup Programs, there will be quite a few entries on this list, each of them delays the startup time of your computer and will more than likely delay the playing of the video.  
-It would be a good idea to look at each of them and decide if you need them to start up as soon as the computer boots. For most of them, the answer will be no. If this is the case, right click on an entry and select 'Move to Delayed Start Program List' (don't move vidStart.bat)  
+
+It would be a good idea to look at each of them and decide if you need them to start up as soon as the computer boots. For most of them, the answer will be no.  
+If this is the case, right click on an entry and select 'Move to Delayed Start Program List' (don't move vidStart.bat)  
+
 Once you have moved the desired items to Delayed Start, click on that tab and change their startup times by selecting on an item and clicking 'Delay Options' at the bottom.  
-You should really only need to change the delay time. Try to stager the startup times so that everything doesn't open all at once, and also try to start and CPU or Hard Drive intensive applications with a delay longer than the startup video selected.  
+
+You should really only need to change the delay time. Try to stager the startup times so that everything doesn't open all at once.  
+Also try to start any CPU or Hard Drive intensive applications with a delay longer than the length of the video selected.  
 
 FAQ:
 -----------------------------
 
 +   **Q:** What do all those parameters after the start command do?  
-    **A:**  
-    `/min`  
+    **A:** `/min`  
     Starts VLC minimized so you don't have to look at it, blocking your nice desktop.  
     `/high`  
     Runs VLC at a higher processor priority so that it (hopefully) won't stutter as you start to use your computer.  
@@ -72,17 +76,14 @@ FAQ:
     `--play-and-exit`  
     Exits VLC once it's finished playing your video, so that it doesn't hang arround on the taskbar.
 +   **Q:** What is WinPatrol?  
-    **A:**  
-    WinPatrol is a windows tool to help protect your computer from malware and help it function properly.  
+    **A:** WinPatrol is a windows tool to help protect your computer from malware and help it function properly.  
     To be honest, I only found WinPatrol while putting together this script because I wanted a way to control the start order of startup applications. I've done a bit of google searching on it and it seems legit and it's been arround for a long time and is updated fairly often.  
     I'm actually quite fond of it now, my computer starts up so much more efficiently! :)
 +   **Q:** What is VLC?  
-    **A:**  
-    ***OMGWTFBBQ!?*** **0_o** I'm suprised you've not heared of it!  
+    **A:** ***OMGWTFBBQ!?*** **0_o** I'm suprised you've not heared of it!  
     VLC stands for Video LAN Client, if I'm not mistaken, and it is one of, if not, the most popular media player available. It's open source and has a huge, active user base and is easily extensible.  
 +   **Q:** This is too hard to understand! Is there a video tutorial I can watch?  
-    **A:**  
-    Not yet, but I'm working on it!  
+    **A:** Not yet, but I'm working on it!  
     Check my [youtube chanel](http://www.youtube.com/user/torrentails) to see if it's up.
 
 Notes/Troubleshooting:
