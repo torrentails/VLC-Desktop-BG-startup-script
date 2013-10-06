@@ -96,3 +96,5 @@ Notes/Troubleshooting:
     Keep your hard drive clean and with plenty of space.  
     Uninstall any programs you don't need, esspecially true for programs that start at windows startup. 
 +   This doesn't work at all if DreamScene is enabled. If you don't know what DreamScene is, then don't worry, you more than likely don't have it enabled.
++   Windows Aero features are disabled while the video is playing, this is an unavoidable side effect of the DirectX output method.  
+    Aero will be re-enabled once the video finishes, so no big loss.
