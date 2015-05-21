@@ -14,13 +14,10 @@ DISCLAIMER:
 Use:
 -----------------------------
 
-1.  Simply save the script anywhere you like. 
+1.  Save the script in the same folder as the video(s) you want to play at startup. 
 2.  Right-click it and select edit. 
-3.  Change the file at the end of the last line to the full path to the file you would like to run at startup.  
-    a. Add `File:///` at the front  
-    b. Replace backslashes (\\) with forward slashes (/)  
-    c. Enclose it all in "quotes"  
-    EG. `"File:///C:/Users/yourname/videos/Dork_PMV.mp4"`    
+3.  Change the path between the `<`angle brackets`>` to the full path of the script.  
+    EG. `"File:///C:/Users/yourname/videos/%chosen%"`    
 4.  Install [VLC](http://www.videolan.org/vlc/download-windows.html) if you haven't done so already. 
 5.  (Optional) Change the `CD` path to the path of your VLC installation.      
     This shouldn't be nessesary if you installed to the Default directory and are running a 64 bit opperating system.  
@@ -42,7 +39,7 @@ If this is the case, right click on an entry and select 'Move to Delayed Start P
 Once you have moved the desired items to Delayed Start, click on that tab and change their startup times by selecting on an item and clicking 'Delay Options' at the bottom.  
 
 You should really only need to change the delay time. Try to stager the startup times so that everything doesn't open all at once.  
-Also try to start any CPU or Hard Drive intensive applications with a delay longer than the length of the video selected.  
+Also try to start any CPU or Hard Drive intensive applications with a delay longer than the length of the video(s).  
 
 FAQ:
 -----------------------------
@@ -50,10 +47,10 @@ FAQ:
 +   **Q:** What do all those parameters after the start command do?  
     **A:** `/min`  
     Starts VLC minimized so you don't have to look at it, blocking your nice desktop.  
-    `/high`  
-    Runs VLC at a higher processor priority so that it (hopefully) won't stutter as you start to use your computer.  
+    `/BELOWNORMAL`  
+    Runs VLC at a low processor priority so that it won't prevent you from using your computer while playing.  
     `--directx-hw-yuv`  
-    Sets the output to DirectX, required to play video as desktop background.  
+    Sets the output to DirectX; required to play video as desktop background.  
     `--video-wallpaper`  
     This tells VLC to actually set video as your wallpaper.  
     `--qt-start-minimized`  
@@ -77,11 +74,11 @@ FAQ:
     Exits VLC once it's finished playing your video, so that it doesn't hang arround on the taskbar.
 +   **Q:** What is WinPatrol?  
     **A:** WinPatrol is a windows tool to help protect your computer from malware and help it function properly.  
-    To be honest, I only found WinPatrol while putting together this script because I wanted a way to control the start order of startup applications. I've done a bit of google searching on it and it seems legit and it's been arround for a long time and is updated fairly often.  
+    To be honest, I only found WinPatrol while putting together this script because I wanted a way to control the start order of startup applications. I've been using it for a long time since and consider it one of the most useful tools on Windows.  
     I'm actually quite fond of it now, my computer starts up so much more efficiently! :)
 +   **Q:** What is VLC?  
     **A:** ***OMGWTFBBQ!?*** **0_o** I'm suprised you've not heared of it!  
-    VLC stands for Video LAN Client, if I'm not mistaken, and it is one of, if not, the most popular media player available. It's open source and has a huge, active user base and is easily extensible.  
+    VLC stands for Video LAN Client, and it is one of, if not, the most popular media player available. It's open source and has a huge, active user base and is easily extensible.  
 +   **Q:** This is too hard to understand! Is there a video tutorial I can watch?  
     **A:** Not yet, but I'm working on it!  
     Check my [youtube chanel](http://www.youtube.com/user/torrentails) to see if it's up.
@@ -92,7 +89,7 @@ Notes/Troubleshooting:
 +   This script was made and only tested Windows 7 x64 with VLC version 2.0.8 and as such, may work diferently or not work at all for you.
 +   This is a Windows batch script, VLC is available on other operating systems but you will need to figure it out your self to get something like this working.
 +   Unless you are running a really fast/powerfull computer with solid state drives (and mybe even if you are), there will still be a delay between your desktop showing and VLC actually kicking in. You can reduce this by doing the folowing:  
-    Folow the Optional Advanced instructions above.  
+    Follow the Optional Advanced instructions above.  
     Keep your hard drive clean and with plenty of space.  
     Uninstall any programs you don't need, esspecially true for programs that start at windows startup. 
 +   This doesn't work at all if DreamScene is enabled. If you don't know what DreamScene is, then don't worry, you more than likely don't have it enabled.
